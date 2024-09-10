@@ -4,6 +4,8 @@
 
 🏭 **Empresa:** IBBI - Instituto Brasileiro de Biotecnologia e Inovação
 
+🌐 **Link do deploy:** https://cadastro-usuario-pi.vercel.app/
+
 ## Sobre o Projeto 🎈
 Desafio técnico implementado utilizando:
 
@@ -21,6 +23,10 @@ Desafio técnico implementado utilizando:
 ## Como executar o Projeto 💻
 
 - Navegue até o diretório do projeto e abra o aquivo `index.html`
+
+Ou
+
+- Siga o link do Deploy: https://cadastro-usuario-pi.vercel.app/
 
 ## Funcionalidades 📑
 `Lista de Usuários:` Exibe uma tabela com ID, Nome, E-mail e Opções para Editar ou Deletar usuários.
