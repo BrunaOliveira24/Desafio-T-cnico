@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <script type='text/javascript' src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+
+
+
+</head>
+<body page='list'>
+    
+    <div id='UserList'>
+        <div>
+            <h1 id="titulo">Lista de Usuários</h1>
+            <br>
+       </div>
+
+        <div>
+            <input style="flex: 1;" placeholder="Pesquisar" id="inputPesquisa">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody id='UserRegisterBody'></tbody>
+        </table>
+        
+        <div>
+            <button onclick="visualizar('register', true)">Novo Usuário</button>
+        </div>
+    </div>
+
+    <form id='UserRegister'>
+       <!-- Cabeçalho com título e subtitulo -->
+        <div>
+            <h1 id="titulo">Cadastro de Usuários</h1>
+            <br>
+       </div>
+
+        <div class='label'>
+            <div>ID</div>
+            <div>
+                <input type='number' placeholder="ID Único" readonly id='id'/>
+            </div>
+        </div>
+
+
+        <div class='label'>
+            <div>Nome</div>
+            <div>
+                <input type='text' placeholder="Digite seu nome" id="nome" required maxlength="150" pattern="[A-Za-zÀ-ÿ\s]+"/>
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>E-mail</div>
+            <div>
+                <input type='email' placeholder="Digite seu e-mail", id="email" required maxlength="20" />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Senha</div>
+            <div>
+                <input type='password' placeholder="Digite sua senha" id="senha" required maxlength="8"/>
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Status</div>
+            <div>
+                <select id="cbStatus" required>
+                    <option value="" selected>Selecione um status</option>
+                    <option value="ativo">Ativo</option>
+                    <option value="excluido">Excluido</option>
+                </select>
+            </div>
+    
+        <div>
+            <button>Salvar</button>
+            <button onclick="visualizar('list')" class="cinza" type="button">Cancelar</button>
+
+        </div>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
