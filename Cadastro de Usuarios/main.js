@@ -58,7 +58,7 @@ function insertUsuario(nome, email){
     const id = listaRegistros.ultimoIdGerado + 1;
     listaRegistros.ultimoIdGerado = id;
     listaRegistros.usuarios.push({
-        id, nome, email, senha
+        id, nome, email, senha, cbStatus
     })
     gravarBD()
     renderizar()
@@ -93,10 +93,12 @@ function perguntarSeDeleta(id){
 }
 
 function limparUsuario(){
+    document.getElementById('id').value = '' 
     document.getElementById('nome').value = ''
     document.getElementById('email').value = ''
     document.getElementById('senha').value = ''
-    document.getElementById('cbStatus').value = ''  
+    document.getElementById('cbStatus').value = ''
+   
 }
 
 function visualizar(pagina, novo=false, id=null){
